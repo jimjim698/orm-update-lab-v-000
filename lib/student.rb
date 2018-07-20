@@ -57,9 +57,9 @@ end
     SELECT * FROM students WHERE students.name = ?
     SQL
 
-    DB[:conn].execute(sql,name).collect |student|
+    DB[:conn].execute(sql,name).collect do |student|
     new_from_db(student)
-    
+  end 
   end
 
 end
