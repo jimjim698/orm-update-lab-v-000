@@ -63,6 +63,11 @@ end
   end
 
   def update
+    sql = <<-SQL 
+    UPDATE students SET name = ?, grade = ?, id = ? WHERE id = ?
+    SQL 
+
+    
   end
 
 end
