@@ -52,4 +52,12 @@ end
     new_student.save 
   end
 
+  def find_by_name(name)
+    sql = <<-SQL 
+    SELECT * FROM students WHERE students.name = ?
+    SQL
+
+    DB[:conn].execute(sql, name)
+  end 
+
 end
