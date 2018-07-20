@@ -49,7 +49,7 @@ end
 
   def self.create(name, grade)
     new_student = Student.new(name, grade)
-    binding.pry
+    new_student
   end
 
 end
