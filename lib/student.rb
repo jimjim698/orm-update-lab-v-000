@@ -59,7 +59,7 @@ end
 
     DB[:conn].execute(sql,name).collect do |student|
     new_from_db(student)
-  end.first  
+  end.first
   end
 
   def update(name)
