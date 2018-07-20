@@ -62,7 +62,7 @@ end
   end.first
   end
 
-  def update(name)
-  end 
+  def update
+  end
 
 end
